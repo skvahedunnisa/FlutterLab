@@ -1,0 +1,101 @@
+import 'dart:html';
+
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(
+    MaterialApp(
+      home: Scaffold(
+        backgroundColor: Color(0xff799bc6),
+        appBar: AppBar(
+          title: Text('Student Profile Card'),
+          backgroundColor: Color(0xff4b44b0),
+        ),
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              CircleAvatar(
+                radius: 60,
+                backgroundImage: AssetImage('assets/images/myimage.jpeg'),
+              ),
+              SizedBox(height: 10),
+              Text(
+                "Shaik Vahedunnisa",
+                style: TextStyle(
+                  fontSize: 30,
+                  fontWeight: FontWeight.bold,
+                  fontStyle: FontStyle.normal,
+                ),
+              ),
+              Text(
+                "Roll No: 24PA1A05L7",
+                style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.normal,
+                    fontStyle: FontStyle.normal),
+              ),
+              Text(
+                "Branch: CSE",
+                style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.normal,
+                    fontStyle: FontStyle.normal),
+              ),
+              SizedBox(height: 8),
+              Container(
+                width: 300,
+                height: 30,
+                color: Colors.white,
+                alignment: Alignment.center,
+                child: Row(
+                  children: [
+                    Icon(
+                      Icons.phone,
+                      color: Colors.black,
+                      size: 20,
+                    ),
+                    SizedBox(width: 8),
+                    Text(
+                      "+91 6301634976",
+                      style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.normal,
+                        fontStyle: FontStyle.normal,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              SizedBox(height: 8),
+              Container(
+                width: 300,
+                height: 30,
+                color: Colors.white,
+                alignment: Alignment.center,
+                child: Row(
+                  children: [
+                    Icon(
+                      Icons.email,
+                      color: Colors.black,
+                      size: 20,
+                    ),
+                    SizedBox(width: 8),
+                    Text(
+                      "skvahedunnisa@gmail.com",
+                      style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.normal,
+                        fontStyle: FontStyle.normal,
+                      ),
+                    ),
+                  ],
+                ),
+              )
+            ],
+          ),
+        ),
+      ),
+    ),
+  );
+}
