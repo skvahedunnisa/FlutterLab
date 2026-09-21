@@ -1,4 +1,4 @@
-a) Develop a Flutter application that applies animations to UI elements using Flutter’s animation framework.
+a) Develop a Flutter application that applies animations to UI elements using Flutter’s animation framework
 import 'package:flutter/material.dart';
 
 void main() {
